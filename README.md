@@ -10,6 +10,7 @@ In order to do it, we've created a simple communication protocol between the ser
 The design is pretty straightforward - we've maintained data structures
 containing user and event object (updated using create_client() and
 create_event()).
+
 The only thing that my not be trivial, is that in order to make the server able
 to wait for upcoming requests to "communicate" (looping over accept()) while
 listening to the stdin (waiting for a user to type 'EXIT'), without "jamming"
